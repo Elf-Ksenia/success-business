@@ -13,7 +13,10 @@
 </head>
 
 <body>
-  <main class="main">
+  <a href="index.html">Главная</a>
+  <a href="object.html">Страница объекта 1</a>
+  <a href="object2.html">Страница объекта 2</a>
+  <main class="main"></main>
   <div class="container">
     <div class="row search">
       <div class="col-lg-9">
@@ -71,7 +74,7 @@
     <div class="row service-card">
       <input type="checkbox" id="service-card" class="d-none">
       <label for="service-card" class="col-lg-12">
-        <table class="table">
+        <table class="table table-index">
           <thead>
             <tr class="table-head">
               <td><i class="fas fa-star"></i><span>№</span>6545</td>
@@ -97,21 +100,23 @@
             </tr>
           </tbody>
         </table>
+        <div class="row contacts d-flex align-items-center">
+          <div class="col-lg-3">
+            <button class="btn btn-light-yellow">Открыть контакты</button>
+          </div>
+          <div class="col-lg-9">
+            <p class="contacts-text">
+              * Для безлимитного доступа к контактам (сотовый телефон, e-mail) заказчика <a href="#">оформите
+                подписку</a>
+            </p>
+          </div>
       </label>
+     
+      </div>
+      <!-- contacts -->
     </div>
     <!-- service-card -->
-    <div class="row contacts d-flex align-items-center">
-      <div class="col-lg-3">
-        <button class="btn btn-light-yellow">Открыть контакты</button>
-      </div>
-      <div class="col-lg-9">
-        <p class="contacts-text">
-          * Для безлимитного доступа к контактам (сотовый телефон, e-mail) заказчика <a href="#">оформите
-            подписку</a>
-        </p>
-      </div>
-    </div>
-    <!-- contacts -->
+   
     <section class="pagination-section d-flex justify-content-btw">
       <div>
         <nav aria-label="Page navigation">
@@ -153,6 +158,7 @@
             <li><a href="#">50</a></li>
             <li><a href="#">100</a></li>
             <li><a href="#">120</a></li>
+            <li><a href="#"></a></li>
           </ul>
         </nav>
       </div>

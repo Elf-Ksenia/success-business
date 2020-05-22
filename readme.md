@@ -1,1 +1,1 @@
-success&business
+success-business

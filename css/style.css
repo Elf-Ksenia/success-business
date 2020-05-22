@@ -193,6 +193,17 @@ color: #FFC329;
   color: #9e9e9e;
 }
 
+.btn-transparent {
+  border: 1px solid #D4D9E9;
+border-radius: 3px;
+color: #7D87A6;
+padding: 7px 20px;
+}
+
+.btn-transparent img {
+  margin-right: 10px;
+}
+
 .warning {
   border: 2px solid #FFC329;
   padding: 0 25px;
@@ -239,7 +250,7 @@ position: relative;
 
 .service-card > label {
   box-shadow: 0px 3px 8px rgba(90, 86, 81, 0.15);
-  padding: 25px;
+  padding:20px 25px 0 25px;
   cursor: pointer;
   width: 100%;
 }
@@ -289,9 +300,9 @@ margin-right: 10px;
 }
 
 .contacts {
-  /* box-shadow: 0px 4px 4px rgba(212, 217, 233, 0.29); */
-  box-shadow: 0px 3px 8px rgba(90, 86, 81, 0.15);
-  margin-bottom: 25px;
+  box-shadow: 0px -4px 4px rgba(212, 217, 233, 0.29);
+  margin-left: -25px;
+  margin-right: -25px;
 }
 
 .contacts a {
@@ -303,7 +314,7 @@ margin-right: 10px;
 }
 
 .contacts-text {
-  margin: 25px 0;
+  padding: 25px 0;
 }
 
 .service-card > label:hover {
@@ -463,4 +474,30 @@ margin-left: 15px;
 .pager li>a:focus .pager-link-name, .pager li>a:hover .pager-link-name {
   color: #1C1C1C;
 }
+
+.link-back {
+  align-content: center;
+ margin: auto;
+}
+.action-nav .container {
+padding: 0 30px;
+margin: 20px 0;
+}
+.action-nav-link {
+  color: #7D87A6;
+  border-left: 1px solid #D4D9E9;
+  align-content: center;
+  margin: auto 0;
+  padding: 20px 15px;
+}
+
+.action-nav .container .action-nav-link:first-child {
+  border: none;
+}
+
+.action-nav-link .fa, .fas {
+  margin-right: 10px;
+}
+
+
 /*  */

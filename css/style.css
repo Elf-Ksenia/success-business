@@ -171,18 +171,18 @@ margin-right: 6px;
 
 .btn-orange {
   background-color: #FFC83C;
-box-shadow: 0px 2px 6px rgba(84, 84, 84, 0.12);
+  box-shadow: 0px 2px 6px rgba(84, 84, 84, 0.12);
  padding: 10px 55px;
  margin-left: 15px !important;
 }
 
 .btn-noir {
   background-color: #444444;
-border-radius: 6px;
-font-size: 16px;
-color: #ffffff;
-font-weight: 700;
-padding: 16px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 16px 25px;
 }
 
 .btn-noir:hover {

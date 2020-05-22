@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Успех и дело</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="main">
+  <div class="container">
+    <div class="row search">
+      <div class="col-lg-9">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Какие работы интересуют?">
+          <span class="input-group-btn">
+            <button class="btn btn-orange"><i class="fas fa-search"></i>Найти</button>
+          </span>
+        </div>
+        <!-- /input-group -->
+      </div>
+      <div class="col-lg-3">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-map-marker-alt"></i>Краснодарский край <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Ставропольский край</a></li>
+            <li><a href="#">Республика Тыва</a></li>
+            <li><a href="#">Калининградская область</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- search -->
+    <div class="row warning d-flex align-items-center">
+      <div class="col-lg-1">
+        <img src="img/signaling 1.svg" alt="warning" class="warning-img">
+      </div>
+      <div class="col-lg-9">
+        <p class="warning-text"><span>Подключите тариф,</span>чтобы получить доступ к контактам победителей тендеров и
+          заказчиков строительных работ
+        </p>
+      </div>
+      <div class="col-lg-2">
+        <button class="btn btn-light">Подключить <img src="img/Frame.svg" alt=""></button>
+      </div>
+    </div>
+    <!-- warning -->
+    <div class="row excavator d-flex">
+      <div><img src="img/excavator.png" alt=""></div>
+      <div class="col-lg-9">
+        <div>
+        <h3 class="excavator-heading">Для тех, кто копает глубже и хочет знать больше!</h3>
+        <p class="excavator-description">Подписывайтесь, если хотите быть в курсе последних событий в сфере гос. закупок
+        </p>
+      </div>
+      </div>
+      <div class="col-lg-3">
+        <button class="btn btn-noir"><i class="far fa-envelope"></i>Подписаться на новости</button>
+      </div>
+    </div>
+    <!-- excavator -->
+    <div class="row service-card">
+      <input type="checkbox" id="service-card" class="d-none">
+      <label for="service-card" class="col-lg-12">
+        <table class="table">
+          <thead>
+            <tr class="table-head">
+              <td><i class="fas fa-star"></i><span>№</span>6545</td>
+              <td class="table-name"><i class="fas fa-bookmark"></i>Бригада электромонтажников</td>
+              <td><i class="far fa-clock"></i><span>Дата</span>10.05.2020</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-body">
+              <td class="table-heading"><i class="fas fa-cog"></i>Вид работ:</td>
+              <td class="table-data">Прокладка</td>
+              <td></td>
+            </tr>
+            <tr class="table-body">
+              <td class="table-heading"><i class="fas fa-map-marker-alt"></i>Место выполнения:</td>
+              <td class="table-data">Красноярский край, Ачинск</td>
+              <td></td>
+            </tr>
+            <tr class="table-body">
+              <td class="table-heading"><img src="img/checklist 1.svg" alt="checklist" class="checklist"> Описание:</td>
+              <td class="table-data">Прокладка, расключка силового кабеля</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </label>
+    </div>
+    <!-- service-card -->
+    <div class="row contacts d-flex align-items-center">
+      <div class="col-lg-3">
+        <button class="btn btn-light-yellow">Открыть контакты</button>
+      </div>
+      <div class="col-lg-9">
+        <p class="contacts-text">
+          * Для безлимитного доступа к контактам (сотовый телефон, e-mail) заказчика <a href="#">оформите
+            подписку</a>
+        </p>
+      </div>
+    </div>
+    <!-- contacts -->
+    <section class="pagination-section d-flex justify-content-btw">
+      <div>
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="First">
+                <span aria-hidden="true"><img src="img/last-page.svg" alt="<" class="reverce"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Previous" class="arrow">
+                <span aria-hidden="true"><img src="img/previous-page.svg" alt="<"></span>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+              <a href="#" aria-label="Next" class="arrow">
+                <span aria-hidden="true"><img src="img/next-page.svg" alt=">"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Last">
+                <span aria-hidden="true"><img src="img/last-page.svg" alt=">"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li><span>Показать по:</span></li>
+            <li><a href="#">20</a></li>
+            <li><a href="#">50</a></li>
+            <li><a href="#">100</a></li>
+            <li><a href="#">120</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div class="row banners">
+      <div class="col-lg-6">
+        <div class="banner-left">
+          <h4 class="banner-heading">Вы подрядчик и ищете заказы?</h4>
+          <button class="btn btn-orange"><img src="img/login.svg" alt="login"> Получить доступ к бирже</button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="banner-right">
+
+          <h4 class="banner-heading">Вы заказчик и ищете исполнителя?</h4>
+
+          <button class="btn btn-noir"><img src="img/edit-tools.svg" alt="edit"> Разместить подряд</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- container -->
+</main>
+<!-- /.main -->
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/0e45e18164.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

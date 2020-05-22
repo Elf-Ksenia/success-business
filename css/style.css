@@ -102,6 +102,10 @@ p, h1, h2, h3, h4, h5, h6{
 .main {
   margin-top: 230px;
 }
+
+.inner {
+  margin: 0 15px;
+}
 /* default finish */
 
 .search {
@@ -268,7 +272,7 @@ color: #E5E5E5;
 margin-right: 10px;
 }
 
-.table .fa-clock {
+.far-clock {
   margin-right: 10px;
   color: #FFC329;
 }
@@ -442,7 +446,6 @@ margin-right: 10px;
 font-weight: 700;
 color: #8C8167;
 margin-top: 35px;
-margin-left: 15px;
 }
 
 .object-name .fa-bookmark {
@@ -480,9 +483,9 @@ margin-left: 15px;
   align-content: center;
  margin: auto;
 }
-.action-nav .container {
-padding: 0 30px;
-margin: 20px 0;
+.action-nav {
+ 
+background: rgba(248, 249, 252, 0.7);
 }
 .action-nav-link {
   color: #7D87A6;
@@ -492,7 +495,11 @@ margin: 20px 0;
   padding: 20px 15px;
 }
 
-.action-nav .container .action-nav-link:first-child {
+.action-nav-link a:hover, .action-nav-link a:focus {
+  color: #1C1C1C;
+}
+
+.action-nav .action-nav-link:first-child {
   border: none;
 }
 
@@ -500,5 +507,30 @@ margin: 20px 0;
   margin-right: 10px;
 }
 
+.object-info {
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.object-number-heading {
+  color: #1C1C1C;
+  font-size: 18px;
+  font-weight: 700;
+}
+.date-actualization {
+  color: #1C1C1C;
+  font-weight: 700;
+}
+.date-adding {
+  color: #C4C4C4;
+}
+.object-info .data {
+  color: #777777;
+  font-size: 14px;
+  margin-left: 5px;
+  font-weight: 400;
+}
 
 /*  */

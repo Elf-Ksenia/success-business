@@ -76,7 +76,7 @@
             <tr class="table-head">
               <td><i class="fas fa-star"></i><span>№</span>6545</td>
               <td class="table-name"><i class="fas fa-bookmark"></i>Бригада электромонтажников</td>
-              <td><i class="far fa-clock"></i><span>Дата</span>10.05.2020</td>
+              <td><i class="far far-clock"></i><span>Дата</span>10.05.2020</td>
             </tr>
           </thead>
           <tbody>

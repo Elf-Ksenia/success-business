@@ -272,7 +272,7 @@ color: #E5E5E5;
 margin-right: 10px;
 }
 
-.far-clock {
+.fa-clock {
   margin-right: 10px;
   color: #FFC329;
 }
@@ -387,7 +387,7 @@ background: transparent;
 
 .banner-left::after {
   content: '';
-  background-image: url(/img/builder.png);
+  background-image: url('../img/builder.png');
   position: absolute;
   width: 206px;
 height: 205px;
@@ -405,7 +405,7 @@ z-index: 100;
 
 .banner-right::after {
   content: '';
-  background-image: url(/img/customer.png);
+  background-image: url('../img/customer.png');
   position: absolute;
   width: 254px;
   height: 205px;

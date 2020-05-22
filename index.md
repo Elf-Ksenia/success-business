@@ -76,7 +76,7 @@
             <tr class="table-head">
               <td><i class="fas fa-star"></i><span>№</span>6545</td>
               <td class="table-name"><i class="fas fa-bookmark"></i>Бригада электромонтажников</td>
-              <td><i class="far far-clock"></i><span>Дата</span>10.05.2020</td>
+              <td><i class="far fa-clock"></i><span>Дата</span>10.05.2020</td>
             </tr>
           </thead>
           <tbody>
@@ -91,7 +91,7 @@
               <td></td>
             </tr>
             <tr class="table-body">
-              <td class="table-heading"><img src="img/checklist 1.svg" alt="checklist" class="checklist"> Описание:</td>
+              <td class="table-heading"><i class="fas fa-clipboard-list"></i>Описание:</td>
               <td class="table-data">Прокладка, расключка силового кабеля</td>
               <td></td>
             </tr>

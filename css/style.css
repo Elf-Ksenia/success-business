@@ -114,6 +114,10 @@ p, h1, h2, h3, h4, h5, h6{
   text-transform: uppercase;
 }
 
+.m-l-10 {
+  margin-left: 10px;
+}
+
 .main {
   margin-top: 230px;
   margin-bottom: 30px;
@@ -753,7 +757,7 @@ margin-top: 25px;
   position: relative;
 }
 
-.feed-back-form::before {
+.feed-back-form.disabled::before {
 content: '';
 position: absolute;
 width: 439px;
@@ -819,7 +823,7 @@ left: 0;
 bottom: -47px;
 }
 
-.carousel::before {
+.carousel.disabled::before {
   content: '';
 position: absolute;
 width: 440px;

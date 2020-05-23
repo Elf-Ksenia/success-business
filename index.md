@@ -16,7 +16,8 @@
   <a href="index.html">Главная</a>
   <a href="object.html">Страница объекта 1</a>
   <a href="object2.html">Страница объекта 2</a>
-  <main class="main"></main>
+  <a href="partnership.html">Партнёрские программы</a>
+  <main class="main">
   <div class="container">
     <div class="row search">
       <div class="col-lg-9">

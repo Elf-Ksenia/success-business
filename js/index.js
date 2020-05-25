@@ -1,8 +1,104 @@
-jQuery(window).load(function () { // Нам нужно дождаться, пока вся графика (и наша карта тоже) загрузится, поэтому используем window.onload,
-  var svgobject = document.getElementById('svgmap'); // Находим тег <object>
-  if ('contentDocument' in svgobject) {              // У нас действительно там что-то есть?
-    var svgdom = jQuery(svgobject.contentDocument);  // Получаем доступ к объектной модели SVG-файла
-    // Теперь делаем свою работу, например:
-    jQuery("#figure1", svgdom).attr("fill", "red");  // Находим тег с id="figure1" в SVG DOM и заливаем его красным
-  }	
+
+$('#far-eastern').on('click', function(e){
+  //внутри нашего пункта меню находим "выпадашку"
+  var $dropMenu = $('#far-eastern-dropdown');
+  //если наш dropMenu видимый - скрываем, если скрыт - показываем
+  if($dropMenu.is(':visible')){
+      $dropMenu.hide();
+  } else {
+      //скрываем все видимые "выпадашки" на странице        
+      $('.dropdown-menu:visible').hide(); 
+      $dropMenu.show();
+  }
+});
+
+$('#siberian').on('click', function(e){
+  //внутри нашего пункта меню находим "выпадашку"
+  var $dropMenu = $('#siberian-dropdown');
+  //если наш dropMenu видимый - скрываем, если скрыт - показываем
+  if($dropMenu.is(':visible')){
+      $dropMenu.hide();
+  } else {
+      //скрываем все видимые "выпадашки" на странице        
+      $('.dropdown-menu:visible').hide(); 
+      $dropMenu.show();
+  }
+});
+
+$('#north-kavkasian').on('click', function(e){
+  //внутри нашего пункта меню находим "выпадашку"
+  var $dropMenu = $('#north-kavkasian-dropdown');
+  //если наш dropMenu видимый - скрываем, если скрыт - показываем
+  if($dropMenu.is(':visible')){
+      $dropMenu.hide();
+  } else {
+      //скрываем все видимые "выпадашки" на странице        
+      $('.dropdown-menu:visible').hide(); 
+      $dropMenu.show();
+  }
+});
+
+$('#southern').on('click', function(e){
+  //внутри нашего пункта меню находим "выпадашку"
+  var $dropMenu = $('#southern-dropdown');
+  //если наш dropMenu видимый - скрываем, если скрыт - показываем
+  if($dropMenu.is(':visible')){
+      $dropMenu.hide();
+  } else {
+      //скрываем все видимые "выпадашки" на странице        
+      $('.dropdown-menu:visible').hide(); 
+      $dropMenu.show();
+  }
+});
+
+$('#privolzhskiy').on('click', function(e){
+  //внутри нашего пункта меню находим "выпадашку"
+  var $dropMenu = $('#privolzhskiy-dropdown');
+  //если наш dropMenu видимый - скрываем, если скрыт - показываем
+  if($dropMenu.is(':visible')){
+      $dropMenu.hide();
+  } else {
+      //скрываем все видимые "выпадашки" на странице        
+      $('.dropdown-menu:visible').hide(); 
+      $dropMenu.show();
+  }
+});
+
+$('#uralskiy').on('click', function(e){
+  //внутри нашего пункта меню находим "выпадашку"
+  var $dropMenu = $('#uralskiy-dropdown');
+  //если наш dropMenu видимый - скрываем, если скрыт - показываем
+  if($dropMenu.is(':visible')){
+      $dropMenu.hide();
+  } else {
+      //скрываем все видимые "выпадашки" на странице        
+      $('.dropdown-menu:visible').hide(); 
+      $dropMenu.show();
+  }
+});
+
+$('#central').on('click', function(e){
+  //внутри нашего пункта меню находим "выпадашку"
+  var $dropMenu = $('#central-dropdown');
+  //если наш dropMenu видимый - скрываем, если скрыт - показываем
+  if($dropMenu.is(':visible')){
+      $dropMenu.hide();
+  } else {
+      //скрываем все видимые "выпадашки" на странице        
+      $('.dropdown-menu:visible').hide(); 
+      $dropMenu.show();
+  }
+});
+
+$('#north-west').on('click', function(e){
+  //внутри нашего пункта меню находим "выпадашку"
+  var $dropMenu = $('#north-west-dropdown');
+  //если наш dropMenu видимый - скрываем, если скрыт - показываем
+  if($dropMenu.is(':visible')){
+      $dropMenu.hide();
+  } else {
+      //скрываем все видимые "выпадашки" на странице        
+      $('.dropdown-menu:visible').hide(); 
+      $dropMenu.show();
+  }
 });

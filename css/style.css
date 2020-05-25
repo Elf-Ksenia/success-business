@@ -985,7 +985,7 @@ z-index: -1;
 .main.black {
   background-color: rgba(31, 31, 31, 0.9);
   margin: 0;
-  height: 100vh;
+height: 1200px;
 }
 
 .map-header {
@@ -1040,41 +1040,127 @@ transition: 0.3s;
   stroke-width: 2;
 }
 
-
-#north-west {
-
-}
-#central {
-
-}
-
-#privolzhskiy {
-
-}
-
-#southern {
-
-}
-
-#north-kavkasian {
-
-}
-
-#siberian {
-
-}
-
-#far-eastern {
-
-}
-
 .dropdown.map-dropdown {
   position: absolute;
-  top: 270px;
-    left: 230px;
     width: 100%;
 }
 
+#north-west-dropdown {
+  top: -300px;
+  left: 230px;
+  
+}
+
+
+
+#central-dropdown {
+  top: -235px;
+  left: 80px;
+}
+
+#uralskiy-dropdown {
+  top: -200px;
+  left: 400px;
+}
+
+#privolzhskiy-dropdown {
+  top: -150px;
+  left: 200px;
+}
+
+#siberian-dropdown {
+  top: -200px;
+  left: 500px;
+}
+
+#far-eastern-dropdown {
+  top: -300px;
+  left: 800px;
+}
+
+#southern-dropdown {
+  top: -70px;
+  left: 130px;
+}
+
+#north-kavkasian-dropdown {
+  top: -50px;
+  left: 0px;
+}
+
+.dropdown.map-dropdown #north-west-dropdown::before {
+  content: '';
+  position: absolute;
+  background: url('../img/north-west.png') no-repeat;
+  width: 184px;
+  height: 103px;
+  top: -103px;
+ 
+}
+
+.dropdown.map-dropdown #central-dropdown::before {
+  content: '';
+  position: absolute;
+  background: url('../img/central.png') no-repeat;
+  width: 182px;
+  height: 116px;
+  top: -116px;
+}
+
+.dropdown.map-dropdown #uralskiy-dropdown::before {
+  content: '';
+  position: absolute;
+  background: url('../img/uralskiy.png') no-repeat;
+  width: 214px;
+  height: 132px;
+  top: -132px;
+}
+
+
+.dropdown.map-dropdown #privolzhskiy-dropdown::before {
+  content: '';
+  position: absolute;
+  background: url('../img/privolzhskiy.png') no-repeat;
+  width: 191px;
+  height: 112px;
+  top: -112px;
+}
+
+.dropdown.map-dropdown #siberian-dropdown::before {
+  content: '';
+  position: absolute;
+  background: url('../img/siberian.png') no-repeat;
+  width: 181px;
+  height: 113px;
+  top: -113px;
+}
+
+.dropdown.map-dropdown #far-eastern-dropdown::before {
+  content: '';
+  position: absolute;
+  background: url('../img/far-eastern.png') no-repeat;
+  width: 182px;
+  height: 96px;
+  top: -96px;
+}
+
+.dropdown.map-dropdown #southern-dropdown::before {
+  content: '';
+  position: absolute;
+  background: url('../img/southern.png') no-repeat;
+  width: 214px;
+  height: 132px;
+  top: -132px;
+}
+
+.dropdown.map-dropdown #north-kavkasian-dropdown::before {
+  content: '';
+  position: absolute;
+  background: url('../img/north-kavkasian.png') no-repeat;
+  width: 196px;
+  height: 102px;
+  top: -102px;
+}
 
 .dropdown.map-dropdown .dropdown-menu>li{
  border-bottom: 1px dashed #D4D9E9;

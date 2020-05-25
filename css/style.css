@@ -17,6 +17,10 @@ outline: none;
 cursor: pointer;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+
 a:hover, a:focus {
   text-decoration: none;
 }
@@ -308,6 +312,7 @@ position: relative;
   color: #ffffff;
   text-shadow: 0px 1px 2px #553E09;
   margin-top: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 .excavator .btn {
@@ -500,6 +505,7 @@ z-index: 100;
   padding-top: 45px;
   margin-left: 30px;
   margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 .banners .btn img {
@@ -617,6 +623,11 @@ background: rgba(248, 249, 252, 0.7);
   background-image: url('../img/carousel-control-right.svg');
   background-repeat: no-repeat;
   background-position: center;
+  right: 15px;
+}
+
+#carousel img {
+  margin: 0 !important;
 }
 
 .glyphicon-chevron-left:before {

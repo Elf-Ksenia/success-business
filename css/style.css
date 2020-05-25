@@ -704,6 +704,7 @@ padding-top: 15px;
     border-radius: 3px;
    margin-top: 20px;
    padding: 16px 0;
+   background-color: #FFFFFF;
   }
   
   .input-date input {
@@ -844,12 +845,12 @@ opacity: 0.7;
 z-index: 2;
 }
 
-.table-and-carousel .btn-transparent {
+.table-and-carousel .btn-light {
   position: absolute;
-  z-index: 3;
+  z-index: 100;
   bottom: 120px;
-  font-weight: 400;
-  color: #7D87A2;
+  font-weight: 700;
+  color: #1C1C1C;
 }
 
 .container.dashed-line {

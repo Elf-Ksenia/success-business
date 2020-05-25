@@ -1,5 +1,5 @@
 
-$('#far-eastern').on('click', function(e){
+$('#far-eastern').hover(function(e){
   //внутри нашего пункта меню находим "выпадашку"
   var $dropMenu = $('#far-eastern-dropdown');
   //если наш dropMenu видимый - скрываем, если скрыт - показываем
@@ -12,7 +12,7 @@ $('#far-eastern').on('click', function(e){
   }
 });
 
-$('#siberian').on('click', function(e){
+$('#siberian').hover(function(e){
   //внутри нашего пункта меню находим "выпадашку"
   var $dropMenu = $('#siberian-dropdown');
   //если наш dropMenu видимый - скрываем, если скрыт - показываем
@@ -25,7 +25,7 @@ $('#siberian').on('click', function(e){
   }
 });
 
-$('#north-kavkasian').on('click', function(e){
+$('#north-kavkasian').hover (function(e){
   //внутри нашего пункта меню находим "выпадашку"
   var $dropMenu = $('#north-kavkasian-dropdown');
   //если наш dropMenu видимый - скрываем, если скрыт - показываем
@@ -38,7 +38,7 @@ $('#north-kavkasian').on('click', function(e){
   }
 });
 
-$('#southern').on('click', function(e){
+$('#southern').hover(function(e){
   //внутри нашего пункта меню находим "выпадашку"
   var $dropMenu = $('#southern-dropdown');
   //если наш dropMenu видимый - скрываем, если скрыт - показываем
@@ -51,7 +51,7 @@ $('#southern').on('click', function(e){
   }
 });
 
-$('#privolzhskiy').on('click', function(e){
+$('#privolzhskiy').hover(function(e){
   //внутри нашего пункта меню находим "выпадашку"
   var $dropMenu = $('#privolzhskiy-dropdown');
   //если наш dropMenu видимый - скрываем, если скрыт - показываем
@@ -64,7 +64,7 @@ $('#privolzhskiy').on('click', function(e){
   }
 });
 
-$('#uralskiy').on('click', function(e){
+$('#uralskiy').hover(function(e){
   //внутри нашего пункта меню находим "выпадашку"
   var $dropMenu = $('#uralskiy-dropdown');
   //если наш dropMenu видимый - скрываем, если скрыт - показываем
@@ -77,7 +77,7 @@ $('#uralskiy').on('click', function(e){
   }
 });
 
-$('#central').on('click', function(e){
+$('#central').hover(function(e){
   //внутри нашего пункта меню находим "выпадашку"
   var $dropMenu = $('#central-dropdown');
   //если наш dropMenu видимый - скрываем, если скрыт - показываем
@@ -90,7 +90,7 @@ $('#central').on('click', function(e){
   }
 });
 
-$('#north-west').on('click', function(e){
+$('#north-west').hover(function(e){
   //внутри нашего пункта меню находим "выпадашку"
   var $dropMenu = $('#north-west-dropdown');
   //если наш dropMenu видимый - скрываем, если скрыт - показываем

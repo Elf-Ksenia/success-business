@@ -303,6 +303,8 @@ padding: 18px 45px;
 border-radius: 3px;
 margin-bottom: 40px;
 position: relative;
+padding-top: 15px;
+padding-bottom: 15px;
 }
 
 .excavator-heading {
@@ -311,17 +313,14 @@ position: relative;
   line-height: 1.9;
   color: #ffffff;
   text-shadow: 0px 1px 2px #553E09;
-  margin-top: 20px;
+ 
   font-family: 'Lato', sans-serif;
 }
 
-.excavator .btn {
-  margin-top: 35px;
-  margin-left: -15px;
+.excavator .col-lg-3 .btn {
+  margin-top: 15px;
 }
-.excavator-description {
-  margin-bottom: 35px;
-}
+
 
 .service-card > label {
   box-shadow: 0px 3px 8px rgba(90, 86, 81, 0.15);
@@ -346,7 +345,7 @@ margin-right: 10px;
 }
 
 .fa-clock {
-  margin-right: 10px;
+  padding-right: 10px;
   color: #FFC329;
 }
 
@@ -417,10 +416,6 @@ margin: 0 -15px;
 .pagination>li>a{
   border: none;
   color:  #777777;
-  width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 20px;
 }
 
 .pagination>li>a:hover {
@@ -457,6 +452,7 @@ background: transparent;
   border-radius: 3px;
   position: relative;
   margin-top: 20px;
+  z-index: -2;
 }
 
 .banner-left::after {
@@ -467,7 +463,7 @@ background: transparent;
 height: 205px;
 top: 0;
 right: 0;
-z-index: 100;
+z-index: -1;
 }
 
 .banner-right {
@@ -475,6 +471,7 @@ z-index: 100;
   border-radius: 3px;
   position: relative;
   margin-top: 20px;
+  z-index: -2;
 }
 
 .banner-right::after {
@@ -485,7 +482,7 @@ z-index: 100;
   height: 205px;
   top: 0;
 right: 0;
-z-index: 100;
+z-index: -1;
 }
 
 .banner-right .btn, .banner-left .btn{
@@ -495,6 +492,14 @@ z-index: 100;
   padding: 17px;
   font-weight: 700;
   font-size: 14px;
+}
+
+.banner-right .banner-heading {
+  margin-right: 150px;
+}
+
+.banner-left .banner-heading {
+  margin-right: 200px;
 }
 
 .banner-heading {
@@ -1268,3 +1273,158 @@ margin-right: 5px;
 .map-checkbox+label:hover {
   color: #2B2518;
 }
+
+@media (min-width: @screen-md-min) { ... }
+@media (max-width: 991px) { 
+ .excavator-heading {
+line-height: 1.5;
+ }
+ }
+
+ @media (max-width: 767px) {
+   .excavator {
+     justify-content: center;
+     display: flex;
+     flex-wrap: wrap;
+   }
+   .excavator .col-sm-3 {
+     order: 2;
+   }
+   .excavator .col-sm-9 {
+text-align: center;
+     order: 1;
+   }
+   .excavator-heading {
+    font-size: 22px;
+    line-height: 1.2;
+   }
+   .excavator .btn {
+      font-size: 14px;
+      padding: 16px;
+   }
+   .excavator .col-sm-12 {
+     order: 3;
+   }
+   .excavator img {
+     width: 80%;
+   }
+   .pagination>li>a, .pagination>li>span {
+    padding: 6px;
+   }
+   .warning {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+   .warning-text {
+     text-align: center;
+     line-height: 1.5;
+   }
+   .warning .btn {
+     margin: 10px 0;
+     font-size: 14px;
+   }
+.banners .btn {
+  font-size: 12px;
+  padding: 13px;
+}
+.banner-heading {
+  font-size: 18px;
+}
+.contacts-text {
+  font-size: 12px;
+}
+.table-index {
+  font-size: 12px;
+}
+.table-index .table-name {
+  font-size: 14px;
+}
+.service-card > label {
+  padding: 10px;
+}
+
+.table-head span {
+  display: block;
+}
+
+.service-card .btn {
+  margin: 10px;
+  font-size: 12px;
+  padding: 8px 16px;
+}
+
+ }
+
+ @media (max-width: 479px) {
+   .search .input-group {
+     display: inline-block;
+     text-align: center;
+   }
+   .input-group .btn-orange {
+     margin-top: 10px;
+     margin-left:  0 !important;
+   }
+
+   .search .btn-default {
+     margin-top: 0;
+   }
+
+   .table-index .table-name {
+    font-size: 12px;
+ }
+
+ .table>tbody>tr>td, .table>thead>tr>td {
+  padding: 4px;
+}
+.table-index {
+  font-weight: 400;;
+}
+
+  .pagination>li>a, .pagination>li>span {
+font-size: 10px;
+  }
+  .pagination img{
+    width: 6px;
+    height: 6px;
+  }
+  .pagination>li>a, .pagination>li>span {
+    padding: 4px;
+   }
+   .pagination {
+    margin: 6px 0;
+}
+.excavator-heading {
+  font-size: 18px;
+}
+.excavator-description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.warning-img {
+  margin: 10px 0;
+}
+.banners .btn {
+  font-size: 12px;
+  padding: 13px;
+}
+
+.banner-left .banner-heading, .banner-right .banner-heading  {
+    margin-right: 0;
+    font-size: 16px;
+}
+
+.banner-right::after, .banner-left::after {
+  opacity: 0.5;
+}
+
+.contacts  {
+ flex-wrap: wrap;
+}
+.contacts-text {
+  padding: 10px;
+}
+.contacts .btn {
+  margin-top: 10px;
+}
+ }

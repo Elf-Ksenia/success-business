@@ -1000,7 +1000,7 @@ padding: 15px 45px;
 margin-left: 10px;
 }
 
-.map-header .btn-transparent:hover {
+.map-header .btn-transparent:hover, .map-header .btn-transparent:focus  {
 color: #fff;
 }
 

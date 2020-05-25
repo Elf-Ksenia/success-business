@@ -846,7 +846,20 @@ z-index: 2;
   color: #7D87A2;
 }
 
+.container.dashed-line {
+  position: relative;
+}
 
+.container.dashed-line::before {
+  content: '';
+  position: absolute;
+  background: url('../img/line1206x1876.png') no-repeat;
+width: 1206px;
+height: 1876px;
+top: 166px;
+left: 0;
+z-index: -1;
+}
 .partnership-picture {
   position: relative;
   width: 100%;
@@ -967,6 +980,11 @@ z-index: -1;
 
 .partnership-program .btn {
   margin-top: 30px;
+}
+
+.partnership-action {
+margin-top: 30px;
+margin-bottom: 30px;
 }
 
 .partnership-action .flex-column {

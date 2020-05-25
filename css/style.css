@@ -699,27 +699,29 @@ padding-top: 15px;
 }
 
 .input-date {
-position: relative;
-  border: 1px solid #ddd;
-  border-radius: 3px;
- margin-top: 20px;
-}
-
-.input-date input {
-  border: none;
-  overflow: hidden;
-  width: 196px;
-  height: 50px;
-position: relative;
-z-index: 100;
-}
-
-.input-date input::-webkit-calendar-picker-indicator {
-  color: transparent;
-  opacity: 1;
-  background: url('../img/date.svg') no-repeat center;
-  background-size: contain;
-}
+  position: relative;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+   margin-top: 20px;
+  }
+  
+  .input-date input {
+    border: none;
+    overflow: hidden;
+    width: 196px;
+    height: 50px;
+  position: relative;
+  z-index: 100;
+  padding: 16px 20px;
+  }
+  
+  .input-date input::-webkit-calendar-picker-indicator {
+    color: transparent;
+    opacity: 1;
+    background: url('../img/calendar.svg') no-repeat center;
+    background-size: contain;
+  }
+  
 
 .chouse-date-block {
 border-left: 1px dashed #B5BFDC;

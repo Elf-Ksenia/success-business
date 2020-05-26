@@ -13,18 +13,14 @@
 </head>
 
 <body>
-  <a href="index.html">Главная</a>
-  <a href="object.html">Страница объекта 1</a>
-  <a href="object2.html">Страница объекта 2</a>
-  <a href="partnership.html">Партнёрские программы</a>
   <main class="main">
     <div class="container container-shadow">
       <div class="inner">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <h5 class="object-name"><i class="fa fa-bookmark"></i> Общеобразовательная школа</h5>
           </div>
-          <div class="col-lg-6 d-flex">
+          <div class="col-lg-6 col-md-6 d-flex content-nav">
             <nav aria-label="...">
               <ul class="pager">
                 <li><a href="#" class="pager-link text-right">
@@ -47,13 +43,13 @@
         </div>
         <!-- row -->
         <div class="action-nav d-flex justify-content-btw">
-          <div class="action-nav-link"><a href="#"><i class="fa fa-star"></i>В избраное</a></div>
-          <div class="action-nav-link"><a href="#"><i class="fa fa-pencil-alt"></i>Редактировать</a></div>
-          <div class="action-nav-link"><a href="#"><i class="fas fa-comment-alt"></i>Добавить комментарий</a></div>
-          <div class="action-nav-link"><a href="#"><i class="fas fa-calendar-alt"></i>Запланировать дело</a></div>
-          <div class="action-nav-link"><a href="#"><i class="fas fa-print"></i>Печать</a></div>
-          <div class="action-nav-link"><a href="#"><i class="fas fa-trash-alt"></i>В архив</a></div>
-          <div class="action-nav-link"><a href="#"><i class="fas fa-ban"></i>Пожаловаться</a></div>
+          <div class="action-nav-link"><a href="#"><i class="fa fa-star"></i><span>В избраное</span></a></div>
+          <div class="action-nav-link"><a href="#"><i class="fa fa-pencil-alt"></i><span>Редактировать</span></a></div>
+          <div class="action-nav-link"><a href="#"><i class="fas fa-comment-alt"></i><span>Добавить комментарий</span></a></div>
+          <div class="action-nav-link"><a href="#"><i class="fas fa-calendar-alt"></i><span>Запланировать дело</span></a></div>
+          <div class="action-nav-link"><a href="#"><i class="fas fa-print"></i><span>Печать</span></a></div>
+          <div class="action-nav-link"><a href="#"><i class="fas fa-trash-alt"></i><span>В архив</span></a></div>
+          <div class="action-nav-link"><a href="#"><i class="fas fa-ban"></i><span>Пожаловаться</span></a></div>
         </div>
         <!-- action-nav -->
         <div class="object-info">
@@ -70,7 +66,7 @@
         </div>
         <!-- object-info -->
         <div class="row table-and-carousel">
-          <div class="col-lg-7">
+          <div class="col-lg-7 col-md-7">
             <table class="table object-table">
               <tr>
                 <td class="table-icon"><i class="fas fa-bars"></i></td>
@@ -119,7 +115,7 @@
               </tr>
             </table>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 col-md-5">
             <div id="carousel" class="carousel disabled slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item active">
@@ -152,14 +148,14 @@
         </div>
         <!-- object-info -->
         <div class="row feed-back">
-          <div class="col-lg-7 feed-back-block">
+          <div class="col-lg-7 col-md-7 feed-back-block">
             <div class="feed-back-textarea">
               <button class="btn btn-orange">Сохранить</button>
               <textarea placeholder="Общий комментарий к проекту"></textarea>
             </div>
             <p class="description">Оставьте заметку, чтобы зафиксировать итог переговором</p>
           </div>
-          <div class="col-lg-5 chouse-date-block">
+          <div class="col-lg-5 col-md-5 chouse-date-block">
             <div class="d-flex chouse-date">
               <h4 class="chouse-date-heading">Моё дело:</h4>
               <div class="input-date">
@@ -178,7 +174,7 @@
         </div>
         <!-- object-info -->
         <div class="row customer-info">
-          <div class="col-lg-7">
+          <div class="col-lg-7 col-md-7">
             <table class="table customer-table">
               <tr>
                 <td class="table-icon"><i class="fas fa-user"></i></td>
@@ -209,7 +205,7 @@
               </tr>
             </table>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 col-md-5">
             <form action="" class="feed-back-form disabled">
               <div class="customer-textarea">
                 <textarea placeholder="Комментарий по работе с заказчиком"></textarea>
@@ -222,19 +218,22 @@
           </div>
         </div>
         <!-- /.row customer-info -->
-        <div class="row subscription d-flex align-items-center">
-          <div><img src="img/big-arrows.png" alt=""></div>
-          <div class="col-lg-7">
-            <div>
+        <div class="row subscription d-flex align-items-center justify-content-btw">
+          
+          <div class="subscription-icon d-flex align-items-center">
+            <img src="img/big-arrows.png" alt="">
+            <div class="subscription-text">
             <h3 class="subscription-heading">Почему не видно контакты?</h3>
             <p class="subscription-description">Доступ к информации ограничен. Купите подписку, на доступ к объектам
             </p>
           </div>
           </div>
-          <div class="col-lg-3">
+          <div class="subscription-btn">
             <button class="btn btn-blond">Купить подписку</button>
           </div>
-          <div class="col-lg-2 psevdo"></div>
+          <div class="subscription-img">
+            <img src="img/builder2.png" alt="">
+          </div>
         </div>
         <!-- excavator -->
       </div>

@@ -534,6 +534,10 @@ margin-top: 35px;
   font-size: 18px;
 }
 
+.pager {
+  display: flex;
+}
+
 .pager-link {
   font-size: 13px;
   color: #B5B5B5;
@@ -687,7 +691,7 @@ margin-right: 0;
 .feed-back-textarea textarea {
   position: relative;
   border: none;
-  width: 600px;
+  width: 100%;
   min-height: 50px;
   resize: vertical;
   outline: none;
@@ -788,8 +792,8 @@ margin-top: 25px;
 .feed-back-form.disabled::before {
 content: '';
 position: absolute;
-width: 439px;
-height: 172px;
+width: 100%;
+height: 100%;
 background-color: #ffffff;
 opacity: 0.5;
 z-index: 100;
@@ -801,7 +805,7 @@ z-index: 100;
 .customer-textarea textarea {
   position: relative;
   border: none;
-  width: 380px;
+  width: 100%;
   min-height: 50px;
   resize: vertical;
   outline: none;
@@ -829,19 +833,25 @@ padding-top: 15px;
   background-color: #FFC329;
 border-radius: 3px;
 margin-bottom: 40px;
-margin-left: 0;
-margin-right: 0;
 }
 
-.subscription img {
-  margin-left: -15px;
+.subscription-text, .subscription-btn{
+  margin: 0 10px;
 }
 
-.psevdo {
+.subscription .subscription-icon {
+  margin-left: 0;
+  
+}
+.subscription .subscription-img {
+ margin-right: 0;
+}
+
+/* .psevdo {
   position: relative;
-}
+} */
 
-.subscription .psevdo::after {
+/* .subscription .psevdo::after {
   content: '';
   position: absolute;
   background: url('../img/builder2.png') no-repeat;
@@ -849,13 +859,13 @@ width: 160px;
 height: 160px;
 left: 0;
 bottom: -47px;
-}
+} */
 
 .carousel.disabled::before {
   content: '';
 position: absolute;
-width: 440px;
-height: 272px;
+width: 100%;
+height: 100%;
 background-color: #ffffff;
 opacity: 0.7;
 z-index: 2;
@@ -870,19 +880,13 @@ z-index: 2;
 }
 
 .container.dashed-line {
-  position: relative;
+  background: url('../img/line1206x1876.png') no-repeat;
+  background-size: auto;
+  background-position: bottom;
+  z-index: -100;
 }
 
-.container.dashed-line::before {
-  content: '';
-  position: absolute;
-  background: url('../img/line1206x1876.png') no-repeat;
-width: 1206px;
-height: 1876px;
-top: 166px;
-left: 0;
-z-index: -1;
-}
+
 .partnership-picture {
   position: relative;
   width: 100%;
@@ -895,6 +899,7 @@ z-index: -1;
 width: 813px;
 height: 457px;
 background: url(../img/partnership-picture.png) no-repeat;
+background-size: contain;
 right: 0;
 }
 
@@ -1006,7 +1011,7 @@ z-index: -1;
 }
 
 .partnership-action {
-margin-top: 30px;
+margin-top: 65px;
 margin-bottom: 30px;
 }
 
@@ -1274,12 +1279,52 @@ margin-right: 5px;
   color: #2B2518;
 }
 
-@media (min-width: @screen-md-min) { ... }
+@media (max-width: 1199px) {
+  .action-nav {
+    font-size: 12px;
+  }
+  .action-nav-link {
+    padding: 14px;
+  }
+  .partnership-steps {
+    margin-bottom: 50px;
+   }
+   .partnership-heading {
+     margin-top: 20px;
+   }
+ }
 @media (max-width: 991px) { 
  .excavator-heading {
 line-height: 1.5;
  }
+
+.carousel-control.right {
+    right: 267px;
  }
+
+ .chouse-date-block {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .chouse-date-block .description {
+ margin-left: 15px;
+ }
+ .table-and-carousel .btn-light {
+   left: 85px;
+ }
+ .subscription {
+   margin-top: 15px;
+ }
+ .partnership-program .btn {
+   padding: 10px;
+   font-size: 14px;
+ }
+ .column-description {
+   font-size: 14px;
+ }
+
+}
 
  @media (max-width: 767px) {
    .excavator {
@@ -1353,8 +1398,111 @@ text-align: center;
   font-size: 12px;
   padding: 8px 16px;
 }
-
+.main {
+  margin-bottom: 0;
+  margin-top: 60px;
+}
+.chouse-date-block {
+  display: block;
+}
+.chouse-date-block .description {
+  margin-left: 0;
+  margin-top: 15px;
+}
+.feed-back-textarea .btn  {
+  padding: 10px 15px;
+}
+.carousel-control.right {
+  right: 0;
  }
+ .action-nav-link>a>span{
+ display: none;
+} 
+.action-nav-link>a>i {
+  display: block;
+  text-align: center;
+}
+.action-nav-link .fa, .fas {
+  margin-right: 0;
+}
+.pager-link, .pager-link-name {
+  font-size: 12px;
+
+}
+.pager li>a {
+  padding: 5px;
+}
+.object-heading {
+    font-size: 16px;
+ }
+.customer-info .description {
+  margin-bottom: 10px;
+}
+
+.subscription-heading {
+  font-size: 20px;
+}
+.subscription {
+  flex-direction: column;
+  margin-bottom: 0;
+}
+.subscription-img {
+  margin-top: 10px;
+}
+.subscription-btn, .subscription-text  {
+  margin-top: 10px;
+}
+.container.dashed-line {
+  background: transparent;
+}
+.partnership-action {
+  flex-wrap: wrap;
+}
+.flex-column .btn-orange {
+  margin-bottom: 15px;
+}
+
+.partnership-heading {
+  font-size: 20px;
+ }
+
+ .container-fluid {
+  height: 200px;
+ }
+
+ .partnership-picture::after {
+  width: 400px;
+  height: 200px;
+ }
+
+ .partnership-steps {
+  margin-top: 0;
+ }
+
+ .partnership-steps {
+  margin-bottom: 15px;
+}
+
+.partnership-programs {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.partnership-program {
+  margin-top: 0;
+}
+
+.partnership-action {
+  margin-top: 0; 
+  justify-content: center;
+}
+.partnership-action .btn-light {
+  font-size: 14px;
+}
+.partnership-program .btn-light {
+  float: right;
+}
+}
 
  @media (max-width: 479px) {
    .search .input-group {
@@ -1374,7 +1522,7 @@ text-align: center;
     font-size: 12px;
  }
 
- .table>tbody>tr>td, .table>thead>tr>td {
+ .table-index>tbody>tr>td, .table-index>thead>tr>td {
   padding: 4px;
 }
 .table-index {
@@ -1427,4 +1575,124 @@ font-size: 10px;
 .contacts .btn {
   margin-top: 10px;
 }
+.object-name {
+  font-size: 16px;
+ }
+ .content-nav {
+   display: block;
+ }
+
+ .link-back {
+   text-align: right;
+   margin-bottom: 10px;
+ }
+ .link-back .btn {
+   font-size: 12px;
+ }
+ .pager-link, .pager-link-name {
+  font-size: 10px;
+}
+.pager {
+    padding-left: 0;
+    margin: 10px 0;
+}
+.object-info {
+ font-size: 12px;
+  padding: 15px 0;
+}
+.object-heading {
+  font-size: 14px;
+}
+.table-icon, .table-data, .table-name {
+  font-size: 12px;
+  padding: 5px;
+}
+.feed-back-textarea {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+}
+.feed-back-textarea .btn {
+  position: relative;
+  order: 1;
+}
+.feed-back-textarea textarea::placeholder {
+font-size: 12px;
+padding-left: 25px;
+background-position: 2px 16px;
+}
+.feed-back-textarea textarea {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.chouse-date {
+  display: block;
+}
+.chouse-date-heading {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.input-date {
+  margin-top: 15px;
+  padding: 10px 0;
+ }
+ .customer-textarea {
+  margin-top: -15px;
+ }
+ .customer-textarea textarea {
+   min-height: 100%;
+ }
+ .feed-back-form{
+   padding: 0;
+ }
+ .customer-textarea textarea::placeholder {
+  height:auto;
+padding-left: 25px;
+padding-top: 10px;
+font-size: 12px;
+  background-position: 3px 10px;
+}
+.table-and-carousel .btn-light {
+  bottom: 54px;
+  font-size: 12px;
+}
+.table-and-carousel .btn-light img {
+  width: 20px;
+}
+.subscription-heading {
+  font-size: 14px;
+  font-weight: 900;
+}
+.subscription-description {
+  font-size: 12px;
+}
+.subscription-img img {
+  width:80px;
+height: auto;
+}
+.subscription-icon img {
+  width: 50px;
+}
+.subscription-btn .btn {
+  font-size: 10px;
+  padding: 15px 20px;
+}
+
+.partnership-heading {
+  font-size: 16px;
+}
+
+.partnership-description {
+  font-size: 14px;
+}
+
+.column-heading {
+  font-size: 16px;
+}
+
+.partnership-action {
+  margin-bottom: 0;
+}
+
  }

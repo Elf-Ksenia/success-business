@@ -90,15 +90,3 @@ $('#central').hover(function(e){
   }
 });
 
-$('#north-west').hover(function(e){
-  //внутри нашего пункта меню находим "выпадашку"
-  var $dropMenu = $('#north-west-dropdown');
-  //если наш dropMenu видимый - скрываем, если скрыт - показываем
-  if($dropMenu.is(':visible')){
-      $dropMenu.hide();
-  } else {
-      //скрываем все видимые "выпадашки" на странице        
-      $('.dropdown-menu:visible').hide(); 
-      $dropMenu.show();
-  }
-});

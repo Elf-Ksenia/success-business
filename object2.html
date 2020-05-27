@@ -13,7 +13,8 @@
 </head>
 
 <body>
-  <a href="#object.html">object</a>
+  <a href="#"></a>
+  <a href="#object1.html">object</a>
   <a href="object2.html">object2</a>
   <a href="partnership.html">partnership</a>
   <a href="map.html">map</a>
@@ -24,7 +25,7 @@
           <div class="col-lg-6 col-md-6">
             <h5 class="object-name"><i class="fa fa-bookmark"></i> Общеобразовательная школа</h5>
           </div>
-          <div class="col-lg-6 col-md-6 d-flex content-nav">
+          <div class="col-lg-6 col-md-6 d-flex justify-content-btw content-nav">
             <nav aria-label="...">
               <ul class="pager">
                 <li><a href="#" class="pager-link text-right">
@@ -64,7 +65,7 @@
             <div class="object-date text-right">
               <p class="date-actualization"><i class="far fa-clock"></i> Дата актуализации: <span
                   class="data">10.05.2020</span></p>
-              <p class="date-adding">Дата добавления: 10.05.2020</p>
+              <p class="date-adding media-hide">Дата добавления: 10.05.2020</p>
             </div>
           </div>
         </div>
@@ -125,12 +126,6 @@
                 <div class="item active">
                   <img src="img/object1.png" alt="...">
                 </div>
-                <!-- <div class="item">
-                    <img src="img/builder.png" alt="...">
-                  </div>
-                  <div class="item">
-                    <img src="img/customer.png" alt="...">
-                  </div> -->
               </div>
               <!-- Элементы управления -->
               <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
@@ -152,18 +147,19 @@
         </div>
         <!-- object-info -->
         <div class="row feed-back">
-          <div class="col-lg-7 col-md-7 feed-back-block">
+          <div class="col-lg-7 col-md-7 col-sm-7 feed-back-block">
             <div class="feed-back-textarea">
               <button class="btn btn-orange">Сохранить</button>
-              <textarea placeholder="Общий комментарий к проекту"></textarea>
+              <textarea placeholder="Общий комментарий к проекту" class="media-hide"></textarea>
+              <textarea placeholder="Комментарий к проекту" class="d-none media-show"></textarea>
             </div>
             <p class="description">Оставьте заметку, чтобы зафиксировать итог переговором</p>
           </div>
-          <div class="col-lg-5 col-md-5 chouse-date-block">
-            <div class="d-flex chouse-date">
-              <h4 class="chouse-date-heading">Моё дело:</h4>
+          <div class="col-lg-5 col-md-5 col-sm-5 chouse-date-block">
+            <div class="d-flex justify-content-btw chouse-date">
+              <h4 class="chouse-date-heading media-hide">Моё дело:</h4>
               <div class="input-date">
-                <input type="date" value="дд/мм/гггг">
+                <input type="text" name="date"   placeholder="дд/мм/гггг" class="tcal" value="" />
               </div>
             </div>
             <p class="description">Назначьт себе дату следующего, контакта, чтобы не пропстить звонок</p>
@@ -212,7 +208,8 @@
           <div class="col-lg-5 col-md-5">
             <form action="" class="feed-back-form disabled">
               <div class="customer-textarea">
-                <textarea placeholder="Комментарий по работе с заказчиком"></textarea>
+                <textarea placeholder="Комментарий по работе с заказчиком"  class="media-hide"></textarea>
+                <textarea placeholder="Комментарий по заказчику" class="d-none media-show"></textarea>
               </div>
               <div class="form-submit">
                 <button class="btn btn-orange">Сохранить</button>

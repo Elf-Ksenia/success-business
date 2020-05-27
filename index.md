@@ -13,14 +13,15 @@
 </head>
 
 <body>
-  <a href="#object.html">object</a>
+  <a href="#"></a>
+  <a href="#object1.html">object</a>
   <a href="object2.html">object2</a>
   <a href="partnership.html">partnership</a>
   <a href="map.html">map</a>
   <main class="main">
     <div class="container">
       <div class="row search">
-        <div class="col-lg-9">
+        <div class="col-lg-9 col-md-9">
           <div class="input-group">
             <input type="text" class="form-control" placeholder="Какие работы интересуют?">
             <span class="input-group-btn">
@@ -29,29 +30,25 @@
           </div>
           <!-- /input-group -->
         </div>
-        <div class="col-lg-3">
-          <div class="btn-group">
-            <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-map-marker-alt"></i>Краснодарский край <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a href="#">Ставропольский край</a></li>
-              <li><a href="#">Республика Тыва</a></li>
-              <li><a href="#">Калининградская область</a></li>
-            </ul>
-          </div>
+        <div class="col-lg-3 col-md-3">
+         
+           <div class="form-group">
+              <a href="map.html">
+                <select name="select" id="sel1" class="form-control select-region"></select>
+              </a>
+            </div>
         </div>
       </div>
       <!-- search -->
       <div class="row warning d-flex align-items-center">
-        <div class="col-lg-1">
-          <img src="img/signaling 1.svg" alt="warning" class="warning-img">
-        </div>
-        <div class="col-lg-9">
-          <p class="warning-text"><span>Подключите тариф,</span>чтобы получить доступ к контактам победителей тендеров и
-            заказчиков строительных работ
-          </p>
+        <div class="col-lg-10">
+          <div class="d-flex align-items-center">
+            <img src="img/signaling 1.svg" alt="warning" class="warning-img">
+            <p class="warning-text"><span>Подключите тариф,</span>чтобы получить доступ к контактам победителей тендеров
+              и
+              заказчиков строительных работ
+            </p>
+          </div>
         </div>
         <div class="col-lg-2">
           <button class="btn btn-light">Подключить <svg width="8" height="12" viewBox="0 0 8 12" fill="none"
@@ -85,9 +82,9 @@
         </div>
         <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center align-items-center">
           <div class="">
-          <button class="btn btn-noir"><i class="far fa-envelope"></i>Подписаться на новости</button>
+            <button class="btn btn-noir"><i class="far fa-envelope"></i>Подписаться на новости</button>
+          </div>
         </div>
-      </div>
       </div>
       <!-- excavator -->
       <div class="row service-card">
@@ -125,7 +122,8 @@
             </div>
             <div class="col-lg-9">
               <p class="contacts-text">
-                * Для безлимитного доступа к контактам (сотовый телефон, e-mail) заказчика <a href="#">оформите
+                * Для <span class="media-hide">безлимитного</span> доступа к контактам <span class="media-hide">(сотовый
+                  телефон, e-mail)</span> заказчика <a href="#">оформите
                   подписку</a>
               </p>
             </div>

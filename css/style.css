@@ -1351,7 +1351,9 @@ margin-right: 5px;
  .excavator-heading {
 line-height: 1.5;
  }
-
+ .partnership-heading {
+  margin-top: 60px;
+}
  .table-and-carousel .psevdo {
    justify-content: flex-start;
  }
@@ -1857,7 +1859,7 @@ margin: 0 -15px;
   margin-top: 15px;
 }
  }
- @media (max-width: 339px) {
+ @media (max-width: 309px) {
    .banner-right::after{
     height: 205px
    }

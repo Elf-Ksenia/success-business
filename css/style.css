@@ -1081,7 +1081,7 @@ cursor: pointer;
 transition: 0.3s;
 }
 
-.map-content path:hover {
+.map-content path:hover, .map-content path.hovered {
   opacity: 0.8;
   transition: 0.3s;
   fill: #FFC229;
@@ -1089,14 +1089,13 @@ transition: 0.3s;
   stroke-width: 2;
 }
 
-.dropdown.map-dropdown {
-  position: absolute;
-    width: 100%;
-}
+
+
 
 #north-west-dropdown {
   top: -300px;
   left: 230px;
+  position: relative;
   
 }
 
@@ -1105,37 +1104,51 @@ transition: 0.3s;
 #central-dropdown {
   top: -235px;
   left: 80px;
+  position: relative;
 }
 
 #uralskiy-dropdown {
   top: -200px;
   left: 400px;
+  position: relative;
 }
 
 #privolzhskiy-dropdown {
   top: -150px;
   left: 200px;
+  position: relative;
 }
 
 #siberian-dropdown {
   top: -200px;
   left: 500px;
+  position: relative;
 }
 
 #far-eastern-dropdown {
   top: -300px;
   left: 800px;
+  position: relative;
 }
 
 #southern-dropdown {
   top: -70px;
   left: 130px;
+  position: relative;
 }
 
 #north-kavkasian-dropdown {
   top: -50px;
   left: 0px;
+  position: relative;
 }
+
+/* .dropdown.map-dropdown {
+position: absolute;
+} */
+
+
+
 
 .dropdown.map-dropdown #north-west-dropdown::before {
   content: '';
@@ -1144,8 +1157,8 @@ transition: 0.3s;
   width: 184px;
   height: 103px;
   top: -103px;
- 
 }
+
 
 .dropdown.map-dropdown #central-dropdown::before {
   content: '';
@@ -1211,7 +1224,26 @@ transition: 0.3s;
   top: -102px;
 }
 
-.dropdown.map-dropdown .dropdown-menu>li{
+ .map-dropdown {
+background-color: #fff;
+box-shadow: 0px 0px 8px rgba(5, 5, 5, 0.2);
+border-radius: 3px;
+width: fit-content;
+overflow: scroll;
+position: absolute;
+z-index: 100;
+} 
+
+.dropdown-child {
+  display: none;
+}
+
+.select-region {
+  position: relative;
+}
+
+
+.dropdown.map-dropdown .dropdown-menu>li, .dropdown-child>li{
  border-bottom: 1px dashed #D4D9E9;
  margin: 3px 15px;
  padding: 0;
@@ -1221,6 +1253,7 @@ transition: 0.3s;
   border: none;
   margin-bottom: 15px;
 }
+
 .dropdown-header .title {
   font-weight: 700;
   font-size: 17px;

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<select class="form-control select-region"></select>
+    
+    <ul class="dropdown map-dropdown">
+      <li><img src="img/north-west.png" alt=""></li>
+      <li class="dropdown-header">
+        <input type="checkbox" id="central" class="parent-checkbox map-checkbox">
+        <label for="central" class="d-block">
+          <span class="title">Центальный</span><br> федеральный округ
+        </label>
+        <ul class="dropdown-child">
+          <li>
+            <input type="checkbox" id="msc" name="map-checkbox" class="map-checkbox">
+            <label for="msc">Москва</label>
+          </li>
+          <li>
+            <input type="checkbox" id="bel" name="map-checkbox" class="map-checkbox">
+            <label for="bel">Белгородская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="bryansk" name="map-checkbox" class="map-checkbox">
+            <label for="bryansk">Брянская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="vladimir" name="map-checkbox" class="map-checkbox">
+            <label for="vladimir">Владимирская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="voronezh" name="map-checkbox" class="map-checkbox">
+            <label for="voronezh">Воронежская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ivanovsk" name="map-checkbox" class="map-checkbox">
+            <label for="ivanovsk">Ивановская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kaluga" name="map-checkbox" class="map-checkbox">
+            <label for="kaluga">Калужская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kostr" name="map-checkbox" class="map-checkbox">
+            <label for="kostr">Костромская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kursk" name="map-checkbox" class="map-checkbox">
+            <label for="kursk">Курская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="lipetsk" name="map-checkbox" class="map-checkbox">
+            <label for="lipetsk">Липецкая область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="moscowskaya" name="map-checkbox" class="map-checkbox">
+            <label for="moscowskaya">Московская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="orel" name="map-checkbox" class="map-checkbox">
+            <label for="orel">Орловская область</label>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown-header">
+        <input type="checkbox" id="southern" class="parent-checkbox map-checkbox">
+        <label for="southern" class="d-block">
+          <span class="title">Южный</span><br> федеральный округ
+        </label>
+        <ul class="dropdown-child">
+          <li>
+            <input type="checkbox" id="adygeya" name="map-checkbox" class="map-checkbox">
+            <label for="adygeya">Республика Адыгея</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kalmyk" name="map-checkbox" class="map-checkbox">
+            <label for="kalmyk">Республика Калмыкия</label>
+          </li>
+          <li>
+            <input type="checkbox" id="krym" name="map-checkbox" class="map-checkbox">
+            <label for="krym">Республика Крым</label>
+          </li>
+          <li>
+            <input type="checkbox" id="krasnodar" name="map-checkbox" class="map-checkbox">
+            <label for="krasnodar">Краснодарский край</label>
+          </li>
+          <li>
+            <input type="checkbox" id="astrah" name="map-checkbox" class="map-checkbox">
+            <label for="astrah">Астраханская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="volgograd" name="map-checkbox" class="map-checkbox">
+            <label for="volgograd">Волгоградская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="rostov" name="map-checkbox" class="map-checkbox">
+            <label for="rostov">Ростовская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="sevast" name="map-checkbox" class="map-checkbox">
+            <label for="sevast">Севастополь</label>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown-header">
+          <input type="checkbox" id="north-west" class="parent-checkbox map-checkbox">
+          <label for="north-west" class="d-block">
+            <span class="title">Северо-Западный</span><br> федеральный округ
+          </label>
+        <ul class="dropdown-child">
+          <li>
+            <input type="checkbox" id="spb" name="map-checkbox" class="map-checkbox">
+            <label for="spb">Санкт-Петербург</label>
+          </li>
+          <li>
+            <input type="checkbox" id="korelia" name="map-checkbox" class="map-checkbox">
+            <label for="korelia">Республика Карелия</label>
+          </li>
+          <li>
+            <input type="checkbox" id="komi" name="map-checkbox" class="map-checkbox">
+            <label for="komi">Республика Коми</label>
+          </li>
+          <li>
+            <input type="checkbox" id="arh" name="map-checkbox" class="map-checkbox">
+            <label for="arh"> Архангельская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="volg" name="map-checkbox" class="map-checkbox">
+            <label for="volg">Вологодская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kalinin" name="map-checkbox" class="map-checkbox">
+            <label for="kalinin">Калининградская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="lenin" name="map-checkbox" class="map-checkbox">
+            <label for="lenin">Ленинградская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="murm" name="map-checkbox" class="map-checkbox">
+            <label for="murm">Мурманская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="novg" name="map-checkbox" class="map-checkbox">
+            <label for="novg">Новгородская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="pskov" name="map-checkbox" class="map-checkbox">
+            <label for="pskov">Псковская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="nenez" name="map-checkbox" class="map-checkbox">
+            <label for="nenez">Ненецкий автономный округ</label>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown-header">
+          <input type="checkbox" id="privolzhskiy" class="parent-checkbox map-checkbox">
+          <label for="privolzhskiy" class="d-block">
+            <span class="title">Приволжский</span><br> федеральный округ
+          </label>
+        <ul class="dropdown-child">
+          <li>
+            <input type="checkbox" id="bash" name="map-checkbox" class="map-checkbox">
+            <label for="bash">Башкортостан</label>
+          </li>
+          <li>
+            <input type="checkbox" id="mariy" name="map-checkbox" class="map-checkbox">
+            <label for="mariy">Республика Марий Эл</label>
+          </li>
+          <li>
+            <input type="checkbox" id="mord" name="map-checkbox" class="map-checkbox">
+            <label for="mord">Мордовия</label>
+          </li>
+          <li>
+            <input type="checkbox" id="tatar" name="map-checkbox" class="map-checkbox">
+            <label for="tatar">Татарстан</label>
+          </li>
+          <li>
+            <input type="checkbox" id="volg" name="map-checkbox" class="map-checkbox">
+            <label for="volg">Вологодская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="udm" name="map-checkbox" class="map-checkbox">
+            <label for="udm">Удмуртия</label>
+          </li>
+          <li>
+            <input type="checkbox" id="chuv" name="map-checkbox" class="map-checkbox">
+            <label for="chuv">Чувашия </label>
+          </li>
+          <li>
+            <input type="checkbox" id="murm" name="map-checkbox" class="map-checkbox">
+            <label for="murm">Мурманская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="perm" name="map-checkbox" class="map-checkbox">
+            <label for="perm">Пермский край</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kirov" name="map-checkbox" class="map-checkbox">
+            <label for="kirov">Кировская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="nizhe" name="map-checkbox" class="map-checkbox">
+            <label for="nizhe">Нижегородская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="oren" name="map-checkbox" class="map-checkbox">
+            <label for="oren">Оренбургская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="penza" name="map-checkbox" class="map-checkbox">
+            <label for="penza">Пензенская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="samara" name="map-checkbox" class="map-checkbox">
+            <label for="samara">Самарская область</label>
+          </li>
+        </ul>
+      </li>
+
+      <li class="dropdown-header">
+          <input type="checkbox" id="uralskiy" class="parent-checkbox map-checkbox">
+          <label for="uralskiy" class="d-block">
+            <span class="title">Уральский</span><br> федеральный округ
+          </label>
+        <ul class="dropdown-child">
+          <li>
+            <input type="checkbox" id="kurgan" name="map-checkbox" class="map-checkbox">
+            <label for="kurgan">Курганская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="sverdlovsk" name="map-checkbox" class="map-checkbox">
+            <label for="sverdlovsk">Свердловская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="tumen" name="map-checkbox" class="map-checkbox">
+            <label for="tumen">Тюменская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="chel" name="map-checkbox" class="map-checkbox">
+            <label for="chel">Челябинская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ugra" name="map-checkbox" class="map-checkbox">
+            <label for="ugra">Югра</label>
+          </li>
+          <li>
+            <input type="checkbox" id="yamal" name="map-checkbox" class="map-checkbox">
+            <label for="kyamal">Ямало-Ненецкий автономный округ</label>
+          </li>
+        </ul>
+      </li>
+      <li class="dropdown-header">
+          <input type="checkbox" id="siberian" class="parent-checkbox map-checkbox">
+          <label for="siberian" class="d-block">
+            <span class="title">Сибирский</span><br> федеральный округ
+          </label>
+        <ul class="dropdown-child">
+          <li>
+            <input type="checkbox" id="altay" name="map-checkbox" class="map-checkbox">
+            <label for="altay">Алтай</label>
+          </li>
+          <li>
+            <input type="checkbox" id="tyva" name="map-checkbox" class="map-checkbox">
+            <label for="tyva">Республика Тыва</label>
+          </li>
+          <li>
+            <input type="checkbox" id="hak" name="map-checkbox" class="map-checkbox">
+            <label for="hak">Хакасия</label>
+          </li>
+          <li>
+            <input type="checkbox" id="alt" name="map-checkbox" class="map-checkbox">
+            <label for="alt">Алтайский край</label>
+          </li>
+          <li>
+            <input type="checkbox" id="krasnoyarsk" name="map-checkbox" class="map-checkbox">
+            <label for="krasnoyarsk">Красноярский край</label>
+          </li>
+          <li>
+            <input type="checkbox" id="irkutsk" name="map-checkbox" class="map-checkbox">
+            <label for="irkutsk">Иркутская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kemerovo" name="map-checkbox" class="map-checkbox">
+            <label for="kemerovo">Кемеровская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="novosib" name="map-checkbox" class="map-checkbox">
+            <label for="novosib">Новосибирская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="omsk" name="map-checkbox" class="map-checkbox">
+            <label for="nomsk">Омская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="tomsk" name="map-checkbox" class="map-checkbox">
+            <label for="tomsk">Томская область</label>
+          </li>
+        </ul>
+      </li>
+
+      <li class="dropdown-header">
+          <input type="checkbox" id="north-kavkasian" class="parent-checkbox map-checkbox">
+          <label for="north-kavkasian" class="d-block">
+            <span class="title">Северо-Кавказский</span><br> федеральный округ
+          </label>
+        <ul class="dropdown-child">
+          <li>
+            <input type="checkbox" id="dag" name="map-checkbox" class="map-checkbox">
+            <label for="dag">Дагестан</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ingush" name="map-checkbox" class="map-checkbox">
+            <label for="ingush">Ингушетия</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kabardin" name="map-checkbox" class="map-checkbox">
+            <label for="kabardin">Кабардино-Балкария</label>
+          </li>
+          <li>
+            <input type="checkbox" id="karach" name="map-checkbox" class="map-checkbox">
+            <label for="karach">Карачаево-Черкесия</label>
+          </li>
+          <li>
+            <input type="checkbox" id="oset" name="map-checkbox" class="map-checkbox">
+            <label for="oset">Северная Осетия</label>
+          </li>
+          <li>
+            <input type="checkbox" id="chechen" name="map-checkbox" class="map-checkbox">
+            <label for="chechen">Чеченская Республика</label>
+          </li>
+          <li>
+            <input type="checkbox" id="stavr" name="map-checkbox" class="map-checkbox">
+            <label for="stavr">Ставропольский край </label>
+          </li>
+        </ul>
+      </li>
+
+      <li class="dropdown-header">
+          <input type="checkbox" id="far-eastern" class="parent-checkbox map-checkbox">
+          <label for="far-eastern" class="d-block">
+            <span class="title">Дальневосточный</span><br> федеральный округ
+          </label>
+        <ul class="dropdown-child">
+          <li>
+            <input type="checkbox" id="bur" name="map-checkbox" class="map-checkbox">
+            <label for="bur">Бурятия</label>
+          </li>
+          <li>
+            <input type="checkbox" id="yakut" name="map-checkbox" class="map-checkbox">
+            <label for="yakut">Якутия</label>
+          </li>
+          <li>
+            <input type="checkbox" id="zabayk" name="map-checkbox" class="map-checkbox">
+            <label for="zabayk">Забайкальский край</label>
+          </li>
+          <li>
+            <input type="checkbox" id="kamchatka" name="map-checkbox" class="map-checkbox">
+            <label for="kamchatka">Камчатский край</label>
+          </li>
+          <li>
+            <input type="checkbox" id="primor" name="map-checkbox" class="map-checkbox">
+            <label for="primor">Приморский край</label>
+          </li>
+          <li>
+            <input type="checkbox" id="hab" name="map-checkbox" class="map-checkbox">
+            <label for="hab">Хабаровский край</label>
+          </li>
+          <li>
+            <input type="checkbox" id="amur" name="map-checkbox" class="map-checkbox">
+            <label for="amur">Амурская область</label>
+          </li>
+          <li>
+            <input type="checkbox" id="magadan" name="map-checkbox" class="map-checkbox">
+            <label for="magadan">Магаданская область</label>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+          crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/0e45e18164.js" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

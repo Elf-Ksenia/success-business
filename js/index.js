@@ -7,7 +7,7 @@ $(function () {
 });
 
 $(function () {
-  $('.map-dropdown').hide();
+  $('.dropup-img').hide();
   $('.select-region').click(function () {
     $('.dropup-img').slideToggle();
   });

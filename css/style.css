@@ -1232,6 +1232,8 @@ width: fit-content;
 overflow: scroll;
 position: absolute;
 z-index: 100;
+padding: 10px 0;
+left: 0;
 } 
 
 .dropdown-child {
@@ -1241,7 +1243,19 @@ z-index: 100;
 .select-region {
   position: relative;
 }
+.dropup-img {
+  display: none; 
+  position: absolute;
+  bottom: 100%;
+  z-index: 100;
+}
 
+.map-dropdown::before {
+  content: '';
+position: relative;
+background: url('../img/north-west.png');
+
+}
 
 .dropdown.map-dropdown .dropdown-menu>li, .dropdown-child>li{
  border-bottom: 1px dashed #D4D9E9;
@@ -1249,15 +1263,20 @@ z-index: 100;
  padding: 0;
 }
 
-.dropdown.map-dropdown .dropdown-menu>li:first-child, .dropdown.map-dropdown .dropdown-menu>li:last-child {
+.dropdown.map-dropdown .dropdown-menu>li:first-child, 
+.dropdown.map-dropdown .dropdown-menu>li:last-child,
+.dropdown-child li:last-child {
   border: none;
   margin-bottom: 15px;
 }
 
 .dropdown-header .title {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 17px;
   color: #2B2518;
+  background: url('../img/caret.svg') no-repeat 100% 6px;
+  display: block;
+  padding-right: 15px;
 }
 
 .psevdo-check {

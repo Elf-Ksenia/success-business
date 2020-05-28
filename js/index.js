@@ -6,6 +6,13 @@ $(function () {
   });
 });
 
+$(function () {
+  $('.map-dropdown').hide();
+  $('.select-region').click(function () {
+    $('.dropup-img').slideToggle();
+  });
+});
+
 
 $(document).ready(function () {
   $('.parent-checkbox').on('click', function () {
